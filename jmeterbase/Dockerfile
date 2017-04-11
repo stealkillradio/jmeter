@@ -14,7 +14,7 @@ RUN mkdir -p "/usr/share/jmeter/" \
 	&& cd /tmp \
 	&& wget -qc http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-3.1.tgz \
 	&& tar -xf apache-jmeter-3.1.tgz --directory "/usr/share/jmeter" --strip-components=1 --no-same-owner \
-	&& rm \
+	&& rm apache-jmeter-3.1.tgz \
 	&& ln -s /usr/share/jmeter/bin/jmeter /usr/bin/jmeter
 
 # Set Jmeter Home
